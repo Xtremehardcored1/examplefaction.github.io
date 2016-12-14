@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link rel="shortcut icon" type="image/png" href="/favicon.png?">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Example Faction</title>
+		<meta name="description" content="Webpage definitiva para la Faction de Example">
+		<meta name="author" content="XTR3M">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+		<script src="js/classie.js"></script>
+		<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 130,
+                header = document.querySelector(".cbp-af-header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"cbp-af-header-shrink");
+            } else {
+                if (classie.has(header,"cbp-af-header-shrink")) {
+                    classie.remove(header,"cbp-af-header-shrink");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="cbp-af-header">
+
+				<div class="cbp-af-inner">
+					<h1>EXAMPLE</h1>
+					<nav>
+						<a href="https://examplefaction.github.io/">Inicio</a>
+						<a href="https://examplefaction.github.io/members">Miembros</a>
+						<a href="https://examplefaction.github.io/plans">Planes</a>
+						<a href="https://examplefaction.github.io/contact">Contacto</a>
+					</nav>
+				</div>
+			</div>
+
+			<header class="clearfix">
+				<span>Planes <span class="bp-icon bp-icon-about" data-content="Aquí encontrarás información de los planes planteados."></span></span>
+				<h1>Base:</h1>
+			</header>	
+			<div class="main">
+				<section><div><p>Planeamos llevar a cabo <a href="https://www.youtube.com/watch?v=-a6UuzqGruY">ésta</a> base, los materiales necesarios son:</p></div></section>
+				<section><div><p><center>Stone Bricks                     8353<br>
+Nether Brick                     2943<br>
+Stone Slab                       1411<br>
+Glass                            1089<br>
+Block of Quartz                   462<br>
+Stone Brick Stairs                286<br>
+Nether Brick Stairs               239<br>
+Ladder                            201<br>
+Spruce Leaves                     164<br>
+Oak Fence Gate                    138<br>
+Glowstone                         123<br>
+Nether Brick Slab                  87<br>
+Iron Bars                          77<br>
+Pillar Quartz Block                68<br>
+Spruce Wood Planks                 61<br>
+Quartz Stairs                      50<br>
+Spruce Wood                        48<br>
+Stone Bricks Slab                  42<br>
+Iron Door                          36<br>
+Lever                              34<br>
+Quartz Slab                        31<br>
+Redstone Lamp                      31<br>
+Wooden Trapdoor                    29<br>
+Birch Leaves                       26<br>
+Brewing Stand                      22<br>
+Crafting Table                     22<br>
+Dark Oak Wood                      21<br>
+Stone Pressure Plate               18<br>
+Dark Oak Wood Planks               18<br>
+Sign                               15<br>
+Torch                              13<br>
+Furnace                            13<br>
+Obsidian                           12<br>
+Oak Door                           10<br>
+Oak Leaves                          6<br>
+Anvil                               6<br>
+Jungle Wood                         6<br>
+Cobblestone Stairs                  2<br>
+		   Jungle Wood Stairs                  2</center></p></div></section>
+			</div>
+		</div>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link rel="shortcut icon" type="image/png" href="/favicon.png?">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Example Faction</title>
+		<meta name="description" content="Webpage definitiva para la Faction de Example" />
+		<meta name="author" content="XTR3M" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/classie.js"></script>
+		<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 130,
+                header = document.querySelector(".cbp-af-header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"cbp-af-header-shrink");
+            } else {
+                if (classie.has(header,"cbp-af-header-shrink")) {
+                    classie.remove(header,"cbp-af-header-shrink");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="cbp-af-header">
+
+				<div class="cbp-af-inner">
+					<h1>EXAMPLE</h1>
+					<nav>
+						<a href="https://examplefaction.github.io/">Inicio</a>
+						<a href="https://examplefaction.github.io/members">Miembros</a>
+						<a href="https://examplefaction.github.io/plans">Planes</a>
+						<a href="https://examplefaction.github.io/contact">Contacto</a>
+					</nav>
+				</div>
+			</div>
+
+			<header class="clearfix">
+				<span>Contacto <span class="bp-icon bp-icon-about" data-content="Aquí puedes encontrar cómo contactarnos."></span></span>
+				<h1>E-Mail</h1>
+			</header>	
+			<div class="main">
+				<section>
+					<div><p>Nuestro E-Mail de contacto es <a href= "">factionexample@gmail.com</a></p></div>
+				</section>	
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" type="image/png" href="/favicon.png?">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Example Faction</title>
+		<meta name="description" content="Webpage definitiva para la Faction de Example" />
+		<meta name="author" content="XTR3M" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 130,
+                header = document.querySelector(".cbp-af-header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"cbp-af-header-shrink");
+            } else {
+                if (classie.has(header,"cbp-af-header-shrink")) {
+                    classie.remove(header,"cbp-af-header-shrink");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="cbp-af-header">
+
+				<div class="cbp-af-inner">
+					<h1>EXAMPLE</h1>
+					<nav>
+						<a href="https://examplefaction.github.io/">Inicio</a>
+						<a href="https://examplefaction.github.io/members">Miembros</a>
+						<a href="https://examplefaction.github.io/plans">Planes</a>
+						<a href="https://examplefaction.github.io/contact">Contacto</a>
+					</nav>
+				</div>
+			</div>
+
+			<header class="clearfix">
+				<span>Inicio <span class="bp-icon bp-icon-about" data-content="Éste es el portal oficial de Example, en el que podrás encontrar información y ayuda sobre la faction, así como miembros, planes a futuro e incluso estilo de juego."></span></span>
+				<h1>¡Bienvenidos!</h1>
+			</header>	
+			<div class="main">
+				<section>
+					<div><p>Aquí podrás encontrar información sobre futuros planes, actuales miembros, e-mail de contacto, TS3 y Discord.</p></div>
+				</section>
+				<section>
+					<div><p>¿Qué es Discord?</p></div>
+					<div><p>Discord es un servicio de voz y chat para gamers gratis, seguro y que funciona tanto en móvil como en tu computador.</p></div>
+				</section>
+				<section>
+					<div><p>¿Dónde y cómo instalo Discord?</p></div>
+					<div><p>Dando click <a href="https://discordapp.com/" target="_blank">acá</a>.<br>
+					Hay versión web, PC, Mac, Linux, incluso para PS4 o celular.<br>
+					<a href="https://discordapp.com/features" target="_blank">Lista</a> de características de Discord.</p></div>
+				</section>
+				<section>
+								<div><p>Cómo me uno al servidor de Discord?</p></div>
+				<div><p>Hay dos maneras diferentes de hacerlo:<br>
+				La primera (y más fácil) es dando click <a href="https://discord.gg/9UdRE5k" target="_blank">aquí</a>, si eso no funciona puedes usar el boton de unirse a servidor en Discord, está en el panel de la izquierda (es un símbolo de + en un círculo) e ingresar este enlace:<br>
+				<a href="https://discord.gg/9UdRE5k" target="_blank">https://discord.gg/9UdRE5k</a></div></p>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
