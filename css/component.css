@@ -41,6 +41,14 @@
 	margin: 0;
 	float: left;
 }
+.cbp-af-header h1 a{
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
 
 .cbp-af-header nav {
 	float: right;
